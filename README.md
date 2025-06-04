@@ -63,17 +63,25 @@ It generates the following files:
 
 
 
-# Python envioronment (Python 3.10)
+# Python environment (Python 3.10)
 
 > conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+
 > pip install --upgrade pip
+
 > pip install "tensorflow<2.11"
+
 > python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+
 Si da error numpy
 > pip uninstall numpy
+
 > pip install "numpy<2.0"
+
 > pip install tf-keras-vis
+
 > pip install notebook
+
 > pip install opencv-python
 
 
