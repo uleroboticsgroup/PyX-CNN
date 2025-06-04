@@ -22,7 +22,7 @@ Study of animals category with only one detection by image, displays similarity 
 Then a dataset analysis of the final dataset has been done
 [dataset_analysis.ipynb](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/dataset_analysis.ipynb)
 
-File [voc2010_info_parts.csv](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/voc2010_info.csv) has been generated with the columns:
+File [dataset_info_parts.csv](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/dataset_info_parts.csv) has been generated with the columns:
 - file: file_name
 - split: train or val
 - per_occ: percentage of occupation of detected object in image [0-1]
@@ -61,7 +61,48 @@ It generates the following files:
 - vgg16_without_model.h5 with the trained model
 - [vgg16_without_train.csv](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/vgg16_without_train.csv) with the training metrics
 
+### Classifier results
 
+[generate_visual_explanation.ipynb](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/generate_visual_explanation.ipynb) and [calculate_MIS_metric.ipynb](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/calculate_MIS_metric.ipynb) generate results files from trained models.
+
+File [dataset_info_parts_metrics_methods.csv](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/dataset_info_parts_metrics_methods.csv) (model with transfer learning) and [dataset_info_parts_metrics_methods_without.csv](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/dataset_info_parts_metrics_methods_without.csv) (model without transfer learning) results with the columns:
+- file: file_name
+- split: train or val which corresponds with training and validation data
+- per_occ: percentage of occupation of detected object in image [0-1]
+- cat: category name
+- img_w: width image (original image)
+- img_h: height image (orginal image)
+- aspect_ratio: apect ratio (original image)
+- per_occ_torso: percentage of occupation of torso mask in image [0-1]
+- per_occ_head: percentage of occupation of head mask in image [0-1]
+- per_occ_leg: percentage of occupation of leg mask in image [0-1]
+- file_path: complete path to the file
+- pred_id: category predicted id
+- pred_ok: correct prediction [0-1]
+- cat_id: category id
+- mean_act_obj: mean activation value of object region
+- mean_act_back: mean activation value of background region
+- perc_act_obj: percentage of activation greather than 0.5 of object region
+- perc_act_back: percentage of activation greather than 0.5 of background region
+- method: visual activation method [gradcam, gradcamplus, scorecam]
+- oc_part: oclussion part [NaN, object, head, torso, leg]
+- oc_part_perc: oclussion part percentage
+- pred_prob: probability of prediction
+- hact_1_part: higher activation part (First) [background, object, head, torso, leg]
+- hact_1_perc: percentage of occupation of the higher activation part (First)
+- hact_2_part: higher activation part (Second) [background, object, head, torso, leg]
+- hact_2_perc: percentage of occupation of the higher activation part (Second)
+- hact_3_part: higher activation part (Third) [background, object, head, torso, leg]
+- hact_3_perc: percentage of occupation of the higher activation part (Third)
+
+
+File [mis_stats_0.csv](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/mis_stats_0.csv) (model with transfer learning) and [mis_stats_1.csv](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/mis_stats_1.csv) (model without transfer learning) results with the columns:
+- layer: layer name
+- mean: mean of the MIS value in that layer
+- std: standar desviation of the MIS values in the layer
+- max: maximum of the MIS values in the layer
+- min: minimum of the MIS values in the layer
+- median: median of the MIS values in the layer
 
 # Python environment (Python 3.10)
 
