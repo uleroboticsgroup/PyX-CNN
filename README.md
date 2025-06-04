@@ -104,6 +104,10 @@ File [mis_stats_0.csv](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/mis
 - min: minimum of the MIS values in the layer
 - median: median of the MIS values in the layer
 
+## Metrics
+
+[all_metrics.ipynb](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/all_metrics.ipynb) generate metrics charts for each model.
+
 # Python environment (Python 3.10)
 
 > conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
