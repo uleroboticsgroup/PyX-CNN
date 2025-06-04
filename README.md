@@ -5,10 +5,10 @@
 
 ## Dataset
 
-[Pascal VOC part](http://roozbehm.info/pascal-parts/pascal-parts.html)
+[Pascal VOC part](http://roozbehm.info/pascal-parts/pascal-parts.html) is the based dataset that is gone to be filtered and analyse for generate the final dataset.
 
 Dataset has been processed
-[dataset.ipynb](https://github.com/uleroboticsgroup/xai/blob/main/dataset.ipynb)
+[dataset.ipynb](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/dataset.ipynb)
 
 Study of animals category with only one detection by image, displays similarity with cow and horse categories.
 | Cat   | Imgs | Train | Val | %Occupation          |
@@ -20,9 +20,9 @@ Study of animals category with only one detection by image, displays similarity 
 | horse | 148  | 69    | 79  | 0.28260008694909383 |
 
 Then a dataset analysis of the final dataset has been done
-[dataset_analysis.ipynb](https://github.com/uleroboticsgroup/xai/blob/main/dataset_analysis.ipynb)
+[dataset_analysis.ipynb](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/dataset_analysis.ipynb)
 
-File [voc2010_info_parts.csv](https://github.com/uleroboticsgroup/xai/blob/main/voc2010_info.csv) has been generated with the columns:
+File [voc2010_info_parts.csv](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/voc2010_info.csv) has been generated with the columns:
 - file: file_name
 - split: train or val
 - per_occ: percentage of occupation of detected object in image [0-1]
@@ -36,8 +36,8 @@ File [voc2010_info_parts.csv](https://github.com/uleroboticsgroup/xai/blob/main/
 
 Images generated to explain dataset distribution of the data:
 
-![dataset_ratios](https://github.com/uleroboticsgroup/xai/blob/main/images/dataset_ratios.png)
-![dataset_splits](https://github.com/uleroboticsgroup/xai/blob/main/images/dataset_splits.png)
-![parts_occupation](https://github.com/uleroboticsgroup/xai/blob/main/images/parts_occupation.png)
-![parts_sample_cow](https://github.com/uleroboticsgroup/xai/blob/main/images/parts_sample_cow.png)
-![parts_sample_horse](https://github.com/uleroboticsgroup/xai/blob/main/images/parts_sample_horse.png)
+![dataset_ratios](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/images/dataset_ratios.png)
+![dataset_splits](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/images/dataset_splits.png)
+![parts_occupation](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/images/parts_occupation.png)
+![parts_sample_cow](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/images/parts_sample_cow.png)
+![parts_sample_horse](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/images/parts_sample_horse.png)
