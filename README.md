@@ -41,3 +41,37 @@ Images generated to explain dataset distribution of the data:
 ![parts_occupation](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/images/parts_occupation.png)
 ![parts_sample_cow](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/images/parts_sample_cow.png)
 ![parts_sample_horse](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/images/parts_sample_horse.png)
+
+
+## Classifier (VGG16 architechture)
+
+### With Transfer Learning and Fine Tuning
+
+[vgg16_model.ipynb](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/vgg16_model.ipynb)
+
+It generates the following files:
+- vgg16_model.h5 with the trained model
+- [vgg16_train.csv](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/vgg16_train.csv) with the training metrics
+
+### Without Transfer Learning
+
+[vgg16_model_without_tf.ipynb](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/vgg16_model_without_tf.ipynb)
+
+It generates the following files:
+- vgg16_without_model.h5 with the trained model
+- [vgg16_without_train.csv](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/vgg16_without_train.csv) with the training metrics
+
+
+
+# Python envioronment (Python 3.10)
+
+> conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+> pip install --upgrade pip
+> pip install "tensorflow<2.11"
+> python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+Si da error numpy
+> pip uninstall numpy
+> pip install "numpy<2.0"
+> pip install tf-keras-vis
+> pip install notebook
+> pip install opencv-python
