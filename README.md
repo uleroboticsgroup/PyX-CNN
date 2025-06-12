@@ -43,23 +43,22 @@ Images generated to explain dataset distribution of the data:
 ![parts_sample_horse](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/images/parts_sample_horse.png)
 
 
-## Classifier (VGG16 architechture)
+## Classifier (Xception architechture)
+
+[vgg16_model.ipynb](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/xception_model.ipynb)
+
 
 ### With Transfer Learning and Fine Tuning
 
-[vgg16_model.ipynb](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/vgg16_model.ipynb)
-
 It generates the following files:
-- vgg16_model.h5 with the trained model
-- [vgg16_train.csv](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/vgg16_train.csv) with the training metrics
+- xception_model.h5 with the trained model
+- [xception_train.csv](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/xception_train.csv) with the training metrics
 
 ### Without Transfer Learning
 
-[vgg16_model_without_tf.ipynb](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/vgg16_model_without_tf.ipynb)
-
 It generates the following files:
-- vgg16_without_model.h5 with the trained model
-- [vgg16_without_train.csv](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/vgg16_without_train.csv) with the training metrics
+- xcpetion_without_model.h5 with the trained model
+- [xception_without_train.csv](https://github.com/uleroboticsgroup/PyX-CNN/blob/main/xception_without_train.csv) with the training metrics
 
 ### Classifier results
 
